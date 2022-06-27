@@ -1,13 +1,9 @@
 import requests
 print("""
-
-
 █▀ █▀▀   █▀▀ █▀█ █▀▀ ▄▀█ ▀█▀ █▀▀
 ▄█ █▄▄   █▄▄ █▀▄ ██▄ █▀█ ░█░ ██▄
-
 [Create Snapchat Account]
 _________________________
-
 By Fostn
 Insta @f09l
 Twitter @lwv5
@@ -17,7 +13,7 @@ _________________________
 user = input("Enter Username : ")
 email = input("Enter Email : ")
 password = input("Enter Password : ")
-url = (f"https://tufaah.osc-fr1.scalingo.io/snapchat/?user={user}&email={email}&password={password}")
+url = (f"https://tufaah1.osc-fr1.scalingo.io/snapchat_register/?user={user}&email={email}&password={password}")
 r = requests.get(url).json()
 if r['error'] == 'Taken user':
 	print('\n''Username Taken')
